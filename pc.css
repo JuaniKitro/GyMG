@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(https://i.imgur.com/P2eMph0.jpg);
+    background-repeat: repeat-x;
+    background-color: #E5E5E5;
+}
+
+/* HEADER */
+.header { grid-area: header; }
+.nav-container{
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+    height: 10rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.nav-links{
+    position: relative;
+    bottom: 0rem;
+    transition: bottom .2s;
+}
+.nav-links:hover{
+    bottom: .5rem;
+}
+#logo{
+    width: 9rem;
+    height: 9rem;
+}
+
+/* MAIN */
+main{
+    padding-top: 2rem;
+    margin: 0 3rem;
+    max-width: 100vw;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+    ". video video video ."
+    ". video video video ."
+    ". . . . ."
+    "precios precios precios precios precios"
+    "invernada invernada novillos economia economia"
+    "invernada invernada novillos granos granos"
+    "contact contact info info info"
+    "contact contact info info info"
+    "contact contact info info info"
+    "img img about about about"
+    "mision mision about about about"
+    "mision mision vision vision vision"
+    "mision mision vision vision vision";
+}
+.video{
+    border-radius: 1.5rem;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+.publi-container {
+    display: flex;
+    grid-area: video;
+    background-color: rgba(255, 255, 255, .5);
+    width: 100rem;
+    height: 55.5rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+/* prices */
+.precios{
+    display: flexbox;
+    grid-area: precios;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+    text-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1rem;
+    color: #353535;
+}
+.precios h3{
+    font-size: 3rem;
+}
+.precios h1{
+    font-size: 13rem;
+    font-weight: 800;
+}
+.precios h1:hover{
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+.invernada{
+    grid-area: invernada;
+    background-color: #353535;
+    color: #E5E5E5;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 5rem;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+
+.invernada h2{
+    padding: 3rem 0
+}
+
+.novillos{
+    grid-area: novillos;
+    background-color: #353535;
+    color: #E5E5E5;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 4.4rem;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+.novillos h2{
+    padding: 1rem 0
+}
+
+.granos {
+    grid-area: granos;
+    background-color: #353535;
+    color: #E5E5E5;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 5rem;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+.granos h2{
+    padding: 2rem 0
+}
+
+.eco {
+    grid-area: economia;
+    background-color: #353535;
+    color: #E5E5E5;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 5rem;
+}
+.eco h2{
+    padding: 2rem 0
+}
