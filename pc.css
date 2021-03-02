@@ -37,7 +37,7 @@ body{
 .nav-links{
     position: relative;
     bottom: 0rem;
-    transition: bottom .2s;
+    transition: all .2s;
 }
 .nav-links:hover{
     bottom: .3rem;
@@ -76,25 +76,18 @@ main{
     "about about about about about"
     "footer footer footer footer footer";
 }
-.video{
-    border-radius: 1.5rem;
-    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
-}
-.publi-container {
-    display: flex;
+.video {
     grid-area: video;
-    background-color: rgba(255, 255, 255, .5);
-    width: 90rem;
-    height: 48.5rem;
-    justify-self: center;
-    align-self: center;
     border-radius: 2rem;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+    align-self: center;
+    justify-self: center;
+    width: 50vw;
+    height: 50vh;
 }
-/* prices */
+
+/* PRICES */
 .precios{
     display: flexbox;
     grid-area: precios;
@@ -300,4 +293,5 @@ main{
 .footer {
     grid-area: footer;
     place-content: center;
+    color: #E5E5E5;
 }
