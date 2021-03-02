@@ -10,44 +10,57 @@ html{
 body{
     background-image: url(https://i.imgur.com/P2eMph0.jpg);
     background-repeat: repeat-x;
-    background-color: #E5E5E5;
+    background-color: #353535;
+    max-width: 100vw;
 }
 
 /* HEADER */
-.header { grid-area: header; }
 .nav-container{
     background-color: rgba(255, 255, 255, .5);
     box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
-    height: 10rem;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    height: 7rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    grid-template-rows: 7rem;
+
 }
+.right-links{
+    grid-column: 2;
+    justify-self:flex-end;
+    align-self: center;
+}
+.right-links img{
+    margin-right: 15rem;
+}
+
 .nav-links{
     position: relative;
     bottom: 0rem;
     transition: bottom .2s;
 }
 .nav-links:hover{
-    bottom: .5rem;
+    bottom: .3rem;
+}
+.logo{
+    grid-row: 1;
+    grid-column: 1;
 }
 #logo{
-    width: 9rem;
-    height: 9rem;
+    width: auto;
+    height: 6rem;
+    margin-left: 15rem;
+    align-self: center;
 }
 
 /* MAIN */
 main{
     padding-top: 2rem;
-    margin: 0 3rem;
     max-width: 100vw;
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr .3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr .3fr  1fr 1fr 1fr 1fr 1fr .3fr 1fr 1fr 1fr .2fr ;
     grid-template-areas:
     ". video video video ."
     ". video video video ."
@@ -57,11 +70,11 @@ main{
     "invernada invernada novillos granos granos"
     "contact contact info info info"
     "contact contact info info info"
-    "contact contact info info info"
-    "img img about about about"
-    "mision mision about about about"
-    "mision mision vision vision vision"
-    "mision mision vision vision vision";
+    ". . . . ."
+    "about about about about about"
+    "about about about about about"
+    "about about about about about"
+    "footer footer footer footer footer";
 }
 .video{
     border-radius: 1.5rem;
@@ -71,8 +84,8 @@ main{
     display: flex;
     grid-area: video;
     background-color: rgba(255, 255, 255, .5);
-    width: 100rem;
-    height: 55.5rem;
+    width: 90rem;
+    height: 48.5rem;
     justify-self: center;
     align-self: center;
     border-radius: 2rem;
@@ -85,33 +98,31 @@ main{
 .precios{
     display: flexbox;
     grid-area: precios;
-    align-self: flex-end;
+    align-self: center;
     justify-self: center;
     text-align: center;
     text-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1rem;
+    letter-spacing: .5rem;
     color: #353535;
-}
-.precios h3{
-    font-size: 3rem;
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-top: 4.4rem;
 }
 .precios h1{
     font-size: 13rem;
     font-weight: 800;
 }
-.precios h1:hover{
-    color: rgb(250, 250, 250);
-    cursor: pointer;
-}
 
 .invernada{
     grid-area: invernada;
-    background-color: #353535;
-    color: #E5E5E5;
+    background-color: #E5E5E5;
+    color: #353535;
     font-size: 3rem;
     text-align: center;
     border-radius: 2rem;
     line-height: 5rem;
     box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+    margin-left: 3rem;
 }
 
 .invernada h2{
@@ -120,8 +131,8 @@ main{
 
 .novillos{
     grid-area: novillos;
-    background-color: #353535;
-    color: #E5E5E5;
+    background-color: #E5E5E5;
+    color: #353535;
     font-size: 2rem;
     text-align: center;
     border-radius: 2rem;
@@ -134,13 +145,14 @@ main{
 
 .granos {
     grid-area: granos;
-    background-color: #353535;
-    color: #E5E5E5;
+    background-color: #E5E5E5;
+    color: #353535;
     font-size: 3rem;
     text-align: center;
     border-radius: 2rem;
     line-height: 5rem;
     box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+    margin-right: 3rem;
 }
 .granos h2{
     padding: 2rem 0
@@ -148,13 +160,144 @@ main{
 
 .eco {
     grid-area: economia;
-    background-color: #353535;
-    color: #E5E5E5;
+    background-color: #E5E5E5;
+    color: #353535;
     font-size: 3rem;
     text-align: center;
     border-radius: 2rem;
     line-height: 5rem;
+    margin-right: 3rem;
 }
 .eco h2{
     padding: 2rem 0
+}
+
+/* CONTACT */
+.contact{
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: 15rem;
+    gap: 10rem;
+    paddingbo
+}
+.contactate{
+    color: #E5E5E5;
+    font-size: 2rem;
+    grid-column: 1;
+    margin-left: 3rem;
+}
+.contactate h2{
+    font-size: 7rem;
+}
+.contactate p{
+    font-size: 3rem;
+    margin-left: 1rem;
+    width: 30rem;
+}
+.info{
+    grid-column: 2;
+    background-color: #E5E5E5;
+    width: 50vw;
+    border-radius: 2rem;
+    text-align: center;
+    color: #353535;
+}
+.info h3{
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    margin-top: 2.5rem;
+}
+.info-grid{
+    display: grid;
+    grid-template-columns: 9rem auto;
+    grid-template-rows: repeat(5, 1fr);
+    height: 30rem;
+}
+.info p{
+    justify-self: start;
+    align-self: center;
+    margin-left: 4rem;
+    font-size: 2rem;
+    grid-column: 2;
+}
+.info-grid img{
+    width: 2rem;
+    height: 2.1rem;
+    align-self: center;
+    justify-self: end;
+
+}
+.email1{
+    grid-column: 1;
+}
+
+/* ABOUT US */
+.about{
+    grid-area: about;
+    background-color: #E5E5E5;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: .4fr .3fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+.video-container{
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+}
+.video-container iframe{
+    border-radius: 1.5rem;
+    box-shadow: rgba(10, 10, 10, .2) .5rem .5rem 1.5rem;
+}
+.quienes-somos{
+    width: 40rem;
+    font-size: 1.6rem;
+    color: #353535;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+.quienes-somos h2{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-shadow:rgb(10 10 10 / 20%) .2rem .2rem .2rem
+}
+.mision{
+    justify-self: center;
+    align-self: flex-start;
+    grid-column: 1;
+    grid-row: 2;
+    width: 35rem;
+    border-right: .1rem solid rgba(10, 10, 10, .5);
+    color: #353535;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.mision h2{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: end;
+    margin-right: 3rem;
+    text-shadow:rgb(10 10 10 / 20%) .2rem .2rem .2rem
+}
+.vision{
+    display: ;
+    border-top: .1rem solid rgba(10, 10, 10, .5);
+    width: 40rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    color: #353535;
+}
+.vision h2{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-shadow:rgb(10 10 10 / 20%) .2rem .2rem .2rem
+}
+.footer {
+    grid-area: footer;
+    place-content: center;
 }
