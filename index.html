@@ -7,13 +7,14 @@
     <title>GyMG de 25 de Mayo</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pc.css">
+    <!-- <link rel="stylesheet" href="pc.css"> -->
+    <link rel="stylesheet" href="mobile.css">
     <link rel="icon" type="image/png" href="https://i.imgur.com/3M9SHbZ.png">
 </head>
 <body>
     <header class="header">
         <nav>
-            <div class="nav-container">
+            <div class="pc-nav-container">
                 <div class="logo">
                     <a href="#"  class="nav-logo"><img id="logo" src="https://i.imgur.com/wUqZLFP.png" alt="gymg-logo"></a>
                 </div>
@@ -23,10 +24,22 @@
                     <a href="#aboutus"class="nav-links"><img src="https://i.imgur.com/OuqoMFP.png" alt=""></a>
                 </div>
             </div>
+            <div class="mobile-nav-container">
+                    <div class="mobile-nav-logo">
+                        <img src="https://i.imgur.com/wUqZLFP.png" alt="gymg-logo">
+                    </div>
+                    <div class="mobile-links-container">
+                        <a href="#prices" class="nav-links"><img src="https://i.imgur.com/wiNqsfh.png" alt="price"></a>
+                        <a href="#contact"  class="nav-links"><img src="https://i.imgur.com/AkBiCWt.png" alt="contact"></a>
+                        <a href="#aboutus"class="nav-links"><img src="https://i.imgur.com/OuqoMFP.png" alt="contact"></a>
+                    </div>
+            </div>
         </nav>
     </header>
     <main>
-            <iframe preload="auto" class="video"src="https://www.youtube.com/embed/t6N8QjplcGc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="main-video-container">
+            <iframe title="Publicidad GyMG" class="main-video" preload="auto" src="https://www.youtube.com/embed/t6N8QjplcGc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen showinfo="0"></iframe>
+        </div>
         <article id="prices" class="precios">
             <h1>PRECIOS</h1>
         </article>
@@ -71,46 +84,49 @@ Dolar Blue | $144,00 <br>
                 <h2>CONTACTATE</h2>
                 <p>con nosotros para empezar a comercializar tu hacienda</p>
             </div>
-            <div class="info">
+            <div class="info-container">
                 <h3>¡Por el medio que prefieras!</h3>
-                <div class="info-grid">
-                    <img src="https://i.imgur.com/0Jwoqk1.png" alt="email">
-                    <p class="ger">Ggutierrez@gymg.com.ar</p>
-                    <img src="https://i.imgur.com/0Jwoqk1.png" alt="email">
-                    <p>Rgutierrez@gymg.com.ar</p>
-                    <img src="https://i.imgur.com/gPRptbp.png" alt="phone">
-                    <p>11 6204-5433</p>
-                    <img src="https://i.imgur.com/gPRptbp.png" alt="phone">
-                    <p>02345 465151</p>
-                    <img src="https://i.imgur.com/JPjtm8s.png" alt="instagram">
-                    <p>gymgde25</p>
+                <div class="info">
+                    <div class="ger-mail">
+                        <img src="https://i.imgur.com/0Jwoqk1.png" alt="email">
+                    Ggutierrez@gymg.com.ar
+                    </div>
+                    <div class="rafa-mail">
+                        <img src="https://i.imgur.com/0Jwoqk1.png" alt="email">
+                    Rgutierrez@gymg.com.ar
+                    </div>
+                    <div class="phone1">
+                        <img src="https://i.imgur.com/gPRptbp.png" alt="phone">
+                    11 6204-5433
+                    </div>
+                    <div class="phone2">
+                        <img src="https://i.imgur.com/gPRptbp.png" alt="phone">
+                    02345 465151
+                    </div>
+                    <div class="insta">
+                        <img src="https://i.imgur.com/JPjtm8s.png" alt="instagram">gymgde25
+                    
+                    </div>
                 </div>
             </div>
         </article>
         <article id="aboutus" class="about">
-            <div>
-                <div class="video-container">
-                    <iframe width="425" height="215" src="https://www.youtube.com/embed/vE8n_T7rrRo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
             <div class="quienes-somos">
                 <h2>¿Quienes somos?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, laboriosam magnam natus velit obcaecati dignissimos consectetur excepturi nulla, totam nesciunt provident architecto at voluptatibus commodi aspernatur, nostrum officiis iure!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt, laboriosam magnam natus velit obcaecati dignissimos consectetur exce</p>
             </div>
             <div class="mision">
                 <h2>Mision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rerum beatae excepturi sunt quis, placeat blanditiis ab incidunt quibusdam provident iure perferendis facilis aspernatur fugit illo consequuntur quas nesciunt tempora?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rerum beatae excepturi sunt ?</p>
             </div>
             <div class="vision">
                 <h2>Vision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis provident eveniet sit odio magnam similique nobis, dolorem exercitationem voluptatem mollitia enim, repellendus rerum maxime? Earum sed natus error et!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis provident eveniet sit odrror et!</p>
             </div>
         </article>
-        <footer class="footer">
-            <div class="footer">
-                <h3>Encontra nuestra oficina en la calle 10 entre 26 y 27</h3>
-            </div>
-        </footer>
     </main>
+    <div class="footer">
+        <p>Encontra nuestras oficinas en la calle 10 entre 26 y 27</p>
+    </div>
 </body>
 </html>
