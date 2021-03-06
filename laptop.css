@@ -1,0 +1,80 @@
+/* LAPTOP MAIN VIDEO 
+==============================*/
+.main-video-container {
+	height: 55rem;
+}
+.main-video {
+	width: 60%;
+	height: 70%;
+}
+
+/* LAPTOP PRICES
+============================== */
+.precios h1 {
+	font-size: 10rem;
+}
+.precios-container {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50% 50%;
+	row-gap: 2rem;
+}
+.invernada {
+	grid-column: 1/2;
+	grid-row: 1/3;
+	line-height: 5rem;
+}
+.novillos {
+	grid-column: 2;
+	grid-row: 1/3;
+}
+.precios-container h2 {
+	font-size: 4.5rem;
+	padding: 2rem 0;
+}
+.invernada,
+.novillos,
+.eco,
+.granos {
+	font-size: 2.5rem;
+}
+
+/* LAPTOP CONTACT
+============================ */
+.contact {
+	display: flex;
+	width: 100%;
+	padding-bottom: 5rem;
+}
+.contactate {
+	width: 40%;
+	margin-top: 2rem;
+	margin-left: 3rem;
+	text-align: start;
+}
+.info-container {
+	width: 55%;
+}
+
+/* ABOUT US LAPTOP
+==================== */
+.about {
+	width: 100%;
+	padding: 5rem;
+	font-size: 3rem;
+}
+.about h2 {
+	font-size: 4rem;
+}
+
+/* FOOTER LAPTOP 
+====================*/
+.footer {
+	font-size: 2.5rem;
+}
+
+/* ICONS
+================== */
+.fi-br-dollar,
+.fi-br-smartphone,
+.fi-br-info {
+	font-size: 4.5rem;
