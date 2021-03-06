@@ -13,6 +13,9 @@
 .precios h1 {
 	font-size: 10rem;
 }
+.precios{
+	height: 20rem;
+}
 .precios-container {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 50% 50%;
