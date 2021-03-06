@@ -56,6 +56,12 @@ a {
 .mobile-links-container img {
 	width: 3rem;
 	height: 3rem;
+	position: relative;
+	top: 0rem;
+	transition: all 0.3s ease-out;
+}
+.mobile-links-container img:hover {
+	top: -0.5rem;
 }
 
 /* MOBILE MAIN VIDEO 
@@ -185,56 +191,4 @@ a {
 	height: 4rem;
 	width: 100%;
 	align-items: center;
-}
-
-/* ICONS
-======================= */
-
-@font-face {
-	font-family: 'uicons-bold-rounded';
-	src: url('../webfonts/uicons-bold-rounded.eot#iefix')
-			format('embedded-opentype'),
-		url('../webfonts/uicons-bold-rounded.woff2') format('woff2'),
-		url('../webfonts/uicons-bold-rounded.woff') format('woff');
-}
-
-i[class^='fi-br-']:before,
-i[class*='fi-br-']:before,
-span[class^='fi-br-']:before,
-span[class*='fi-br-']:before {
-	font-family: uicons-bold-rounded !important;
-	font-style: normal;
-	font-weight: normal !important;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.fi-br-dollar:before {
-	content: '\f170';
-}
-.fi-br-smartphone:before {
-	content: '\f21d';
-}
-.fi-br-info:before {
-	content: '\f1ac';
-}
-
-.fi-br-dollar,
-.fi-br-smartphone,
-.fi-br-info {
-	position: relative;
-	top: 0rem;
-	font-size: 3rem;
-	transition: all 0.2s ease-out;
-	text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.4);
-}
-
-.fi-br-dollar:hover,
-.fi-br-smartphone:hover,
-.fi-br-info:hover {
-	top: -0.5rem;
-	color: white;
 }
