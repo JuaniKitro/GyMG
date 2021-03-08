@@ -19,9 +19,11 @@
 	height: 9rem;
 	justify-items: center;
 }
-.mobile-links-container img {
-	width: 4rem;
-	height: 4rem;
+.nav-links {
+	font-size: 4rem;
+	position: relative;
+	top: 0rem;
+	transition: all 0.2s ease-out;
 }
 
 /* TABLET MAIN VIDEO
