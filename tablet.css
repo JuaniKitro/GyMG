@@ -28,6 +28,9 @@
 
 /* TABLET MAIN VIDEO
 ==================== */
+main{
+	width: 100%;
+}
 .main-video-container {
 	display: flex;
 	justify-content: center;
@@ -63,6 +66,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 
 /* TABLET CONTACT
 ========================== */
@@ -105,3 +109,4 @@
 .fi-br-smartphone,
 .fi-br-info {
 	font-size: 4rem;
+}
